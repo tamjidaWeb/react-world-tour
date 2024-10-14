@@ -1,13 +1,10 @@
-import './Country.css'
-const Country = ({country}) => {
-    console.log(country);
-    const {name, flags} = country;
+
+const country = ({country}) => {
     return (
-        <div className='country'>
-            <h3>Name: {name?.common}</h3>
-            <img src={flags.png} alt="" />
+        <div>
+            
         </div>
     );
 };
 
-export default Country;
+export default country;
