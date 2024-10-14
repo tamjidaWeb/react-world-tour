@@ -3,9 +3,12 @@ import './Country.css'
 const Country = ({country}) => {
     const {name, flags, population, area, cca3} = country;
     const [visited, setVisited] = useState(false);
+
+
     const handleVisited =() =>{
         setVisited(true);
     }
+
     return (
         <div className="country">
             <h3>Name: {name.common}</h3>
@@ -13,7 +16,8 @@ const Country = ({country}) => {
             <p>Population: {population}</p>
             <p>Area: {area}</p>
             <p><small>Code: {cca3}</small></p>
-            <button>Visited: </button>
+            <button onClick={handleVisited}>Visited: </button>
+            {visited && 'I have visited this country.'}
         </div>
     );
 };
