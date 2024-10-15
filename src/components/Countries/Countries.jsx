@@ -15,6 +15,10 @@ const Countries = () => {
   return (
     <div>
       <h3>Countries :{countries.length}</h3>
+      <div>
+      <h5>Visited Countries</h5>
+
+      </div>
       <div className="country-container">
         {
           countries.map((country) => (
