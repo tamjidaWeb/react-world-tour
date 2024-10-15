@@ -6,6 +6,7 @@ import "./Countries.css";
 
 const Countries = () => {
   const [countries, setCountries] = useState([]);
+  const [visitedCountries, setVisitedCountries] = useState([]);
   useEffect(() => {
     fetch("https://restcountries.com/v3.1/all")
       .then((res) => res.json())
@@ -17,7 +18,9 @@ const Countries = () => {
       <h3>Countries :{countries.length}</h3>
       <div>
       <h5>Visited Countries</h5>
-
+    <ul>
+      li
+    </ul>
       </div>
       <div className="country-container">
         {
